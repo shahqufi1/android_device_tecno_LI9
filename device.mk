@@ -129,6 +129,14 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.memtrack-service.mediatek-mali
 
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@4.0.vendor \
+    android.hardware.graphics.mapper@4.0.vendor \
+    libdrm.vendor \
+    libhwc2on1adapter \
+    libhwc2onfbadapter
+
+
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
