@@ -21,4 +21,4 @@
 
 ## Device Picture
 
-! [Tecno Pova 6 Pro] (https://fdn2.gsmarena.com/vv/pics/tecno/tecno-pova-6-pro-02.jpg)
+![tecno-pova-6-pro-02](https://github.com/user-attachments/assets/af434774-001b-448f-a1be-04596258904c)
