@@ -203,6 +203,25 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 
+# Init files
+PRODUCT_PACKAGES += \
+    fstab.mt6789 \
+    fstab.mt6789.vendor_ramdisk \
+    init_connectivity.rc \
+    init.aee.rc \
+    init.connectivity.common.rc \
+    init.connectivity.rc \
+    init.insmod.sh \
+    init.insmod.mt6789.cfg \
+    init.modem.rc \
+    init.mt6789.power.rc \
+    init.mt6789.rc \
+    init.mt6789.usb.rc \
+    init.mtkgki.rc \
+    init.project.rc \
+    init.recovery.usb.rc \
+    init.sensor_2_0.rc \
+    ueventd.mt6789.rc
 
 
 # AAPT
