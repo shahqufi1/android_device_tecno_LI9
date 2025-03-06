@@ -230,6 +230,27 @@ PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-V1-ndk_platform.vendor \
+    android.hardware.security.secureclock-V1-ndk_platform.vendor \
+    android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
+    android.hardware.security.rkp-V3-ndk.vendor \
+    libcppbor_external.vendor:64
+
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.transsion
+
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2.vendor \
+    com.android.nfc_extras \
+    NfcNci \
+    SecureElement \
+    Tag
+
+
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
