@@ -4,7 +4,7 @@
 
 | Basic                   | Spec                                                        |
 | ----------------------- | :---------------------------------------------------------- |
-| SoC                     | MMediatek Dimensity 6080 (6 nm)                             |
+| SoC                     | Mediatek Dimensity 6080 (6 nm)                             |
 | CPU                     | Octa-core (2x2.4 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)     |
 | GPU                     | Mali-G57 MC2                                                |
 | Memory                  | 8GB                                                         |
