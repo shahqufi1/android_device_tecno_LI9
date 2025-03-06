@@ -109,6 +109,14 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6.vendor \
     android.hardware.camera.provider@2.6.vendor
 
+# Dalvik configs
+PRODUCT_VENDOR_PROPERTIES += \
+    dalvik.vm.heapstartsize=32m \
+    dalvik.vm.heapgrowthlimit=512m \
+    dalvik.vm.heapsize=1024m \
+    dalvik.vm.heaptargetutilization=0.5 \
+    dalvik.vm.heapminfree=16m \
+    dalvik.vm.heapmaxfree=128m
 
 
 
