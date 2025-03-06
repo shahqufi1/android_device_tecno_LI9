@@ -167,6 +167,26 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.1.vendor
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-service \
+    android.hardware.health@2.1.vendor \
+    charger_res_images_vendor
+
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.allocator@1.0 \
+    android.hidl.base@1.0.vendor \
+    android.hidl.allocator@1.0.vendor \
+    libhidltransport \
+    libhidlmemory.vendor \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
+
+
+
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
