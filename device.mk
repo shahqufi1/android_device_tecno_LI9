@@ -371,6 +371,11 @@ PRODUCT_PACKAGES += \
     libziparchive.vendor \
     libhidlmemory.vendor 
 
+# Secure Element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2.vendor
+
+
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
