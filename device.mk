@@ -375,6 +375,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
 
+# Sensor HAL Libraries
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0.vendor \
+    android.hardware.sensors@2.1.vendor \
+    android.hardware.sensors@2.1-service.multihal \
+    android.hardware.sensors@2.0-ScopedWakelock.vendor \
+    android.frameworks.sensorservice@1.0.vendor \
+    libsensorndkbridge
+
+# Compatibility Shim for Sensors (Required for MediaTek Blobs)
+PRODUCT_PACKAGES += \
+    libshim_sensors
+
 
 
 # AAPT
