@@ -446,8 +446,8 @@ PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.control@1.0.vendor \
     android.hardware.tetheroffload.control@1.1.vendor
 
-
-
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -467,13 +467,10 @@ PRODUCT_PACKAGES += \
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 32
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
-
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.transsion
 
+#TODO
 # Inherit the proprietary files
 $(call inherit-product, vendor/tecno/LI9/LI9-vendor.mk)
