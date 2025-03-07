@@ -43,5 +43,11 @@ TARGET_OTA_ASSERT_DEVICE := LI9,TECNO-LI9,li9
 # Workaround to make lineage's soong generator work
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
+# Correct Wi-Fi configuration for MediaTek (MTK) devices
+WPA_SUPPLICANT_VERSION := VER_2_10
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_mtk
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_mtk
+
+
 # Inherit the proprietary files
 include vendor/tecno/LI9/BoardConfigVendor.mk
