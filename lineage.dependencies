@@ -16,5 +16,11 @@
     "repository"  : "Anything-at-25-00/hardware_transsion",
     "branch"      : "lineage-20.0",
     "target_path" : "hardware/transsion"
+  },
+  {
+    "remote"      : "github",
+    "repository"  : "Transsion-Devs/android_vendor_sony_dolby",
+    "branch"      : "v1.0_DolbyManager",
+    "target_path" : "Vendor/sony/dolby"
   }
 ]
