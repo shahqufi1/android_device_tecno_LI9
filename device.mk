@@ -332,6 +332,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio@1.6.vendor \
+    libprotobuf-cpp-full.vendor \
+    libprotobuf-cpp-lite.vendor \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
+
 
 
 # AAPT
