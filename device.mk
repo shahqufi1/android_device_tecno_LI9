@@ -341,6 +341,35 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
 
+# Required libs QPR3
+PRODUCT_PACKAGES += \
+    libshim_camera_metadata \
+    libexpat.vendor \
+    libunwindstack.vendor \
+    libchrome.vendor \
+    libcurl.vendor \
+    libutilscallstack.vendor \
+    libexif.vendor \
+    libdng_sdk.vendor \
+    liblz4.vendor \
+    libpiex \
+    libexpat.vendor \
+    libpng.vendor \
+    libion.vendor \
+    libui.vendor \
+    libmemunreachable.vendor \
+    libgatekeeper.vendor \
+    libjsoncpp.vendor \
+    libnetutils.vendor \
+    libdumpstateutil.vendor \
+    libpower.vendor \
+    libruy.vendor \
+    libpcap.vendor \
+    libsqlite.vendor \
+    libtextclassifier_hash.vendor \
+    libutilscallstack.vendor \
+    libziparchive.vendor \
+    libhidlmemory.vendor 
 
 
 # AAPT
