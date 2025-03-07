@@ -162,16 +162,12 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
 
-
-
 # Force any prefer32 targets to be compiled as 64 bit.
 IGNORE_PREFER32_ON_DEVICE := true
 
 # Audio 
 BOARD_USES_ALSA_AUDIO := true
 AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
-
-
 
 # Boot image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
@@ -215,6 +211,23 @@ WPA_SUPPLICANT_VERSION := VER_2_10
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_mtk
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_mtk
 
+# Wi-Fi driver control
+WIFI_DRIVER_FW_PATH_PARAM := "/dev/wmtWifi"
+WIFI_DRIVER_FW_PATH_STA := "STA"
+WIFI_DRIVER_FW_PATH_AP := "AP"
+WIFI_DRIVER_FW_PATH_P2P := "P2P"
+WIFI_DRIVER_STATE_CTRL_PARAM := "/dev/wmtWifi"
+WIFI_DRIVER_STATE_ON := "1"
+WIFI_DRIVER_STATE_OFF := "0"
+
+# Wi-Fi Interfaces
+WIFI_HAL_INTERFACE_COMBINATIONS := {{{STA}, 1}, {{AP}, 1}}
+WIFI_HAL_INTERFACE_COMBINATIONS += ,{{{STA}, 1}, {{P2P}, 1}}
+WIFI_HAL_INTERFACE_COMBINATIONS += ,{{{AP}, 1}, {{P2P}, 1}}
+WIFI_HAL_INTERFACE_COMBINATIONS += ,{{{STA}, 1}, {{NAN}, 1}}
+
+# Wi-Fi Supplicant Service
+WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Inherit the proprietary files
 include vendor/tecno/LI9/BoardConfigVendor.mk
