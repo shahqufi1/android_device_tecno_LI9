@@ -610,10 +610,8 @@ vendor/lib/libbwc.so
 vendor/lib/libmp3dec_mtk.so
 vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libvcodec_oal.so
-vendor/lib/libvcodec_utility_plat.mt6833.so
 vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib/mt6833/libmtk_drvb.so
-vendor/lib/mt6833/libvcodec_utility.so
 vendor/lib/libvcodec_utility_v3a.so
 vendor/lib/libvcodecdrv_v3a.so
 vendor/lib/libvpudv3a_vcodec.so
