@@ -22,17 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 B_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
-    boot \
-    odm_dlkm \
     product \
     system \
     system_ext \
-    vbmeta \
-    vbmeta_system \
-    vbmeta_vendor \
     vendor \
-    vendor_boot \
-    vendor_dlkm
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
