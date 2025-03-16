@@ -98,6 +98,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Platform
 TARGET_BOARD_PLATFORM := mt6833 
 BOARD_HAS_MTK_HARDWARE := true
+BOARD_HAVE_MTK_FM := true
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/gesture_function"
@@ -196,22 +197,17 @@ RECOVERY_MODULES := $(addprefix $(KERNEL_PATH)/ramdisk/, $(BOARD_VENDOR_RAMDISK_
 # Prevent duplicated entries (to solve duplicated build rules problem)
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(sort $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES) $(RECOVERY_MODULES))
 
-# Vendor modules (installed to vendor_dlkm)
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_dlkm/modules.load))
-BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/vendor_dlkm/*.ko)
-
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := LI9,TECNO-LI9,li9
 
 # Workaround to make lineage's soong generator work
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
-# Correct Wi-Fi configuration for MediaTek (MTK) devices
-WPA_SUPPLICANT_VERSION := VER_2_10
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_mtk
-BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_mtk
+# Wi-Fi
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_HOSTAPD_DRIVER := NL80211
 
-# Wi-Fi driver control
 WIFI_DRIVER_FW_PATH_PARAM := "/dev/wmtWifi"
 WIFI_DRIVER_FW_PATH_STA := "STA"
 WIFI_DRIVER_FW_PATH_AP := "AP"
@@ -219,15 +215,8 @@ WIFI_DRIVER_FW_PATH_P2P := "P2P"
 WIFI_DRIVER_STATE_CTRL_PARAM := "/dev/wmtWifi"
 WIFI_DRIVER_STATE_ON := "1"
 WIFI_DRIVER_STATE_OFF := "0"
-
-# Wi-Fi Interfaces
-WIFI_HAL_INTERFACE_COMBINATIONS := {{{STA}, 1}, {{AP}, 1}}
-WIFI_HAL_INTERFACE_COMBINATIONS += ,{{{STA}, 1}, {{P2P}, 1}}
-WIFI_HAL_INTERFACE_COMBINATIONS += ,{{{AP}, 1}, {{P2P}, 1}}
-WIFI_HAL_INTERFACE_COMBINATIONS += ,{{{STA}, 1}, {{NAN}, 1}}
-
-# Wi-Fi Supplicant Service
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # Inherit the proprietary files
 include vendor/tecno/LI9/BoardConfigVendor.mk
