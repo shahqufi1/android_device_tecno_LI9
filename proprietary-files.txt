@@ -1,14 +1,13 @@
 # Unpinned blobs from sys_tssi_64_armv82_tecno-user 14 UP1A.231005.007 533977 release-keys
 
-#IMS
--system_ext/framework/mediatek-common.jar:framework/mediatek-common.jar|b4f57c8f65b92d8b65074911b626559107764bb5
--system_ext/framework/mediatek-framework.jar:framework/mediatek-framework.jar|73d22531a8cb342712e66333120b7e0f6615733c
+-system_ext/framework/mediatek-common.jar:framework/mediatek-common.jar|895c6819d00deb385675cc7b90f073d0b6fbd29d
+-system_ext/framework/mediatek-framework.jar:framework/mediatek-framework.jar|a9789fd904f4b0643a3257e798318faabf342477
 -system_ext/framework/mediatek-ims-base.jar:framework/mediatek-ims-base.jar|a6f7ae937de5b9c25e41af8c15db2717a31a6e97
--system_ext/framework/mediatek-ims-common.jar:framework/mediatek-ims-common.jar|163657f0dea57218c55fc758fefa6eecf2edb8f6
+-system_ext/framework/mediatek-ims-common.jar:framework/mediatek-ims-common.jar|8fc8f9dbbe56a309fa620222430cc854143672fb
 -system_ext/framework/mediatek-ims-extension-plugin.jar:framework/mediatek-ims-extension-plugin.jar|4562720d65136b189d661f248fd3170a749cada3
--system_ext/framework/mediatek-telecom-common.jar:framework/mediatek-telecom-common.jar|247f6c23515d7336a857a749eba69ac63d4212f3
--system_ext/framework/mediatek-telephony-common.jar:framework/mediatek-telephony-common.jar|9cdc9a9d04277c2fc74056f6b72ac3505701a238
-
+-system_ext/framework/mediatek-telecom-common.jar:framework/mediatek-telecom-common.jar|686eaf0a472f44194116a0861944483cd9b09a38
+-system_ext/framework/mediatek-telephony-base.jar:framework/mediatek-telephony-base.jar|f66b872e413d16fc29d22ead4e94984f84be94e9
+-system_ext/framework/mediatek-telephony-common.jar:framework/mediatek-telephony-common.jar|869c6918a945ecb87d8b30ec5ca4056d6b863099
 
 # Audio
 vendor/bin/hw/android.hardware.audio.service.mediatek
